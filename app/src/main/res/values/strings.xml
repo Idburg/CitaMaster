@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CitaMaster</string>
+    <string name="citamaster_tu_experto_en_citas">CitaMaster, tu experto en citas</string>
+    <string name="hoy_es">Hoy es:</string>
+</resources>
