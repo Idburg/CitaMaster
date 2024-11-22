@@ -19,7 +19,7 @@ import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
     private String textHora;
-
+    private Boolean dniValido, fechaValida;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,12 +56,17 @@ public class MainActivity extends AppCompatActivity {
         };
         handler.post(runnable);
 
+        TextView dni = findViewById(R.id.dni);
+        String valorDNI = dni.getText().toString();
+
         CalendarView calendario = findViewById(R.id.calendario);
+        calendario.setDate(fechaHoy.getTime().getTime());
         TextView resultado = findViewById(R.id.resultado);
         calendario.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override
             public void onSelectedDayChange(@NonNull CalendarView calendarView, int year, int month, int dayOfMonth) {
-                String fechaCalendario = dayOfMonth + "de " + (month+1) + "del "+ year;
+                String textoFechaCalendario = dayOfMonth + "de " + (month+1) + "del "+ year;
+
             }
         });
 
