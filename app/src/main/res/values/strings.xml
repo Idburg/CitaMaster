@@ -2,4 +2,14 @@
     <string name="app_name">CitaMaster</string>
     <string name="citamaster_tu_experto_en_citas">CitaMaster, tu experto en citas</string>
     <string name="hoy_es">Hoy es:</string>
+    <string name="hora">Hora:</string>
+    <string name="fecha">Fecha:</string>
+    <string name="has_seleccionado">Has seleccionado:</string>
+    <string name="textaco">Se debe escoger entre las 9:00 y las 14:00 de lunes a viernes</string>
+    <string name="dni">DNI:</string>
+    <string name="_9_00">9:00</string>
+    <string name="_10_00">10:00</string>
+    <string name="_11_00">11:00</string>
+    <string name="_12_00">12:00</string>
+    <string name="_13_00">13:00</string>
 </resources>

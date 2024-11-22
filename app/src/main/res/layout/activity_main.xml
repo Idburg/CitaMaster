@@ -21,14 +21,101 @@
             android:gravity="center"
             android:textSize="24sp"/>
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
         <TextView
             android:id="@+id/fecha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/hoy_es" />
+            android:layout_marginTop="8dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="@string/fecha" />
+
+        <TextView
+            android:id="@+id/hora"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="@string/hora"
+            />
+
+        <TextView
+            android:id="@+id/dni"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="@string/dni" />
+
+        <TextView
+            android:id="@+id/aviso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/textaco"
+            android:textStyle="italic"
+            android:gravity="center"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <RadioButton
+                android:id="@+id/nueve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_9_00" />
+
+            <RadioButton
+                android:id="@+id/diez"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_10_00" />
+
+            <RadioButton
+                android:id="@+id/once"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_11_00" />
+
+            <RadioButton
+                android:id="@+id/doce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/_12_00" />
+
+            <RadioButton
+                android:id="@+id/trece"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/_13_00" />
+        </RadioGroup>
+
+        <CalendarView
+            android:id="@+id/calendario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="30dp"/>
+
+        <TextView
+            android:id="@+id/resultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="@string/has_seleccionado" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
